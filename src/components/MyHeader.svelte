@@ -17,7 +17,7 @@
 	}
 
 	h1 {
-		color: red;
+		color: var(--my-color);
 	}
 
 	.hero {

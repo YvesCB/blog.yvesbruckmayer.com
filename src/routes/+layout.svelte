@@ -5,7 +5,6 @@
 <svelte:head>
 	<title>Playground</title>
 	<meta name="robots" content="noindex nofollow" />
-	<html lang="en" />
 </svelte:head>
 
 <MyHeader />
@@ -17,5 +16,9 @@
 	:global(*::before),
 	:global(*::after) {
 		box-sizing: border-box;
+	}
+
+	:global(:root) {
+		--my-color: coral;
 	}
 </style>
