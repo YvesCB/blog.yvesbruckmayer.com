@@ -1,6 +1,6 @@
 <header>
 	<div class="hero">
-		<h1>BIG TITLE</h1>
+		<h1>Yves' Playground</h1>
 	</div>
 	<nav>
 		<ul>
@@ -12,23 +12,20 @@
 </header>
 
 <style>
-	header {
-		width: 100vw;
-	}
-
-	h1 {
-		color: var(--my-color);
-	}
-
 	.hero {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
+	h1 {
+		font-size: 4rem;
+	}
+
 	nav {
-		max-width: 80rem;
 		margin: auto;
+		padding: 0 1rem;
+		margin-bottom: 4rem;
 	}
 
 	ul {
@@ -42,8 +39,11 @@
 
 	a {
 		text-decoration: none;
+		color: var(--primary-accent-color);
+		font-size: 2.4rem;
+		font-weight: bold;
 	}
 	a:hover {
-		text-decoration: underline;
+		color: var(--secondary-accent-color);
 	}
 </style>
