@@ -14,6 +14,7 @@
 
 <style>
 	:global(*),
+	:global(*::before),
 	:global(*::after) {
 		box-sizing: border-box;
 	}

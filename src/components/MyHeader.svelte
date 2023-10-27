@@ -16,6 +16,10 @@
 		width: 100vw;
 	}
 
+	h1 {
+		color: red;
+	}
+
 	.hero {
 		display: flex;
 		justify-content: center;
