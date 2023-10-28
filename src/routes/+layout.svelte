@@ -1,6 +1,7 @@
 <script>
 	import MyFooter from "../components/MyFooter.svelte";
 	import MyHeader from "../components/MyHeader.svelte";
+	import ThemeSelector from "../components/ThemeSelector.svelte";
 </script>
 
 <svelte:head>
@@ -12,17 +13,17 @@
 	/>
 </svelte:head>
 
-<body>
-	<div class="content">
-		<MyHeader />
+<div class="content" id="root">
+	<MyHeader />
 
-		<main>
-			<slot />
-		</main>
+	<ThemeSelector />
 
-		<MyFooter />
-	</div>
-</body>
+	<main>
+		<slot />
+	</main>
+
+	<MyFooter />
+</div>
 
 <style>
 	@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;400;700;800&display=swap");
@@ -43,10 +44,23 @@
 		--content-width: 90rem;
 	}
 
-	body {
+	:global(.light-mode) {
+		--background-color: #f1f0e8;
+		--font-primary-color: #141414;
+		--font-accent-color: #96b6c5;
+		--primary-accent-color: #a88a59;
+		--secondary-accent-color: #adc4ce;
+	}
+
+	:global(body) {
+		margin: 0;
+	}
+
+	:global(.content) {
 		background-color: var(--background-color);
 		color: var(--font-primary-color);
 		margin: 0;
+		padding: 0 1rem;
 		font-family: "Playpen Sans", cursive;
 	}
 
