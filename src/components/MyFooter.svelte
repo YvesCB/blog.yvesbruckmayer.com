@@ -5,9 +5,3 @@
 		it is.
 	</p>
 </footer>
-
-<style>
-	footer {
-		padding: 0 1rem;
-	}
-</style>

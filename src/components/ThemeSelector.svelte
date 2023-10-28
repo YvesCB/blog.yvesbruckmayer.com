@@ -1,5 +1,16 @@
 <script>
+	import { browser } from "$app/environment";
 	let lightmode = false;
+
+	if (browser) {
+		let storedlightmode = localStorage.getItem("lightMode");
+		if (storedlightmode == null || storedlightmode == "false") {
+			lightmode = false;
+		} else {
+			lightmode = true;
+		}
+		document.body.classList.toggle("light-mode", lightmode);
+	}
 
 	function modeToggle() {
 		lightmode = !lightmode;

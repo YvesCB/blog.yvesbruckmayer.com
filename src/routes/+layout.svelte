@@ -69,10 +69,6 @@
 		margin: auto;
 	}
 
-	main {
-		padding: 0 1rem;
-	}
-
 	:global(h1),
 	:global(h2),
 	:global(h3),
