@@ -6,6 +6,10 @@
 <svelte:head>
 	<title>Playground</title>
 	<meta name="robots" content="noindex nofollow" />
+	<meta
+		name="description"
+		content="Yves' Playground for experiments and things!"
+	/>
 </svelte:head>
 
 <body>
