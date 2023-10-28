@@ -4,7 +4,7 @@
 	function modeToggle() {
 		lightmode = !lightmode;
 		localStorage.setItem("lightMode", lightmode);
-		document.getElementById("root").classList.toggle("light-mode", lightmode);
+		document.body.classList.toggle("light-mode", lightmode);
 	}
 </script>
 

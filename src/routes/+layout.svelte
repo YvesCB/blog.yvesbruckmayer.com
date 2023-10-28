@@ -54,11 +54,11 @@
 
 	:global(body) {
 		margin: 0;
+		background-color: var(--background-color);
+		color: var(--font-primary-color);
 	}
 
 	:global(.content) {
-		background-color: var(--background-color);
-		color: var(--font-primary-color);
 		margin: 0;
 		padding: 0 1rem;
 		font-family: "Playpen Sans", cursive;
