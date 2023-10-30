@@ -27,7 +27,7 @@
 	}
 
 	pre {
-		overflow: scroll;
+		overflow: auto;
 	}
 
 	code {
