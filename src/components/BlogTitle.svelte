@@ -35,4 +35,10 @@
 		justify-content: space-between;
 		align-items: end;
 	}
+
+	@media (max-width: 700px) {
+		.thumbnail {
+			height: 10rem;
+		}
+	}
 </style>

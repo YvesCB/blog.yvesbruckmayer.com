@@ -1,7 +1,6 @@
 <script>
 	import MyFooter from "../components/MyFooter.svelte";
 	import MyHeader from "../components/MyHeader.svelte";
-	import ThemeSelector from "../components/ThemeSelector.svelte";
 </script>
 
 <svelte:head>
@@ -15,8 +14,6 @@
 
 <div class="content" id="root">
 	<MyHeader />
-
-	<ThemeSelector />
 
 	<main>
 		<slot />
@@ -36,20 +33,24 @@
 
 	:global(:root) {
 		--background-color: #1f1f28;
+		/* --background-color-accent: #f0efb2; */
+		--background-color-accent: #8b97a8;
 		--font-primary-color: #dcd7ba;
 		--font-accent-color: #e6c384;
 		--primary-accent-color: #5c6f99;
 		--secondary-accent-color: #455b6a;
 
-		--content-width: 90rem;
+		--content-width: 80rem;
 	}
 
 	:global(.light-mode) {
 		--background-color: #f1f0e8;
+		/* --background-color-accent: #404040; */
+		--background-color-accent: #505068;
 		--font-primary-color: #141414;
 		--font-accent-color: #96b6c5;
 		--primary-accent-color: #a88a59;
-		--secondary-accent-color: #adc4ce;
+		--secondary-accent-color: #b7c9d0;
 	}
 
 	:global(body) {
@@ -87,6 +88,9 @@
 	:global(h3) {
 		font-size: 2rem;
 	}
+	:global(h4) {
+		font-size: 1.6rem;
+	}
 
 	:global(a) {
 		color: var(--primary-accent-color);
@@ -99,5 +103,21 @@
 
 	:global(.blog-img) {
 		border-radius: 0.5rem;
+		max-width: 100%;
+	}
+
+	@media (max-width: 700px) {
+		:global(h1) {
+			font-size: 2.4rem;
+		}
+		:global(h2) {
+			font-size: 2rem;
+		}
+		:global(h3) {
+			font-size: 1.6rem;
+		}
+		:global(h4) {
+			font-size: 1.2rem;
+		}
 	}
 </style>

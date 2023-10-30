@@ -1,5 +1,10 @@
 <article>
 	<h1>I went on a walk!</h1>
+	<img
+		src="/blogimg/231023_img/coverimg.jpg"
+		alt="trail marking sign"
+		class="landscape blog-img"
+	/>
 
 	<h2>Walking</h2>
 	<p>
