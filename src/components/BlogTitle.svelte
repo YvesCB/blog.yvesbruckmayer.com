@@ -9,7 +9,7 @@
 	<h2><a href={bloglink}>{title}</a></h2>
 	<p class="timestamp">{timestamp}</p>
 </div>
-<a href="blog/231023">
+<a href={bloglink}>
 	<img src={imgsrc} alt="img not found" class="landscape thumbnail" />
 </a>
 
@@ -39,6 +39,15 @@
 	@media (max-width: 700px) {
 		.thumbnail {
 			height: 10rem;
+		}
+
+		.blog-post {
+			flex-direction: column;
+			align-items: initial;
+		}
+
+		.blog-post p {
+			margin-top: 0;
 		}
 	}
 </style>

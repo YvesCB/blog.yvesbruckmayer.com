@@ -33,19 +33,17 @@
 
 	:global(:root) {
 		--background-color: #1f1f28;
-		/* --background-color-accent: #f0efb2; */
 		--background-color-accent: #8b97a8;
 		--font-primary-color: #dcd7ba;
 		--font-accent-color: #e6c384;
 		--primary-accent-color: #5c6f99;
 		--secondary-accent-color: #455b6a;
 
-		--content-width: 80rem;
+		--content-width: 75rem;
 	}
 
 	:global(.light-mode) {
 		--background-color: #f1f0e8;
-		/* --background-color-accent: #404040; */
 		--background-color-accent: #505068;
 		--font-primary-color: #141414;
 		--font-accent-color: #96b6c5;
@@ -101,9 +99,18 @@
 		color: var(--secondary-accent-color);
 	}
 
+	:global(code) {
+		font-size: 0.9rem;
+		background-color: rgba(133, 133, 133, 0.3);
+		border-radius: 3px;
+	}
+
 	:global(.blog-img) {
 		border-radius: 0.5rem;
 		max-width: 100%;
+	}
+	:global(.blog-img.landscape) {
+		width: 100%;
 	}
 
 	@media (max-width: 700px) {

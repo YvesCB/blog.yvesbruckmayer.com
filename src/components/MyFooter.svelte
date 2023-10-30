@@ -13,17 +13,31 @@
 			</p>
 		</div>
 
-		<ThemeSelector />
+		<div class="selector">
+			<ThemeSelector />
+		</div>
 	</div>
 </footer>
 
 <style>
 	footer {
 		margin-bottom: 1rem;
+		margin-top: 3.5rem;
 	}
 	.footer-content {
 		display: flex;
 		justify-content: space-between;
 		align-items: end;
+	}
+
+	@media (max-width: 700px) {
+		.footer-content {
+			flex-direction: column;
+			align-items: initial;
+		}
+
+		.selector {
+			align-self: flex-end;
+		}
 	}
 </style>

@@ -19,3 +19,14 @@
 	I went on a 10km walk/hike. Took some pictures and enjoyed the day. You can
 	read more by clicking the title or image.
 </p>
+
+<BlogTitle
+	title="Making a website with SvelteKit"
+	imgsrc="/blogimg/231030_img/cover.png"
+	bloglink="/blog/231030"
+	timestamp="30. Oct 2023"
+/>
+<p>
+	I explain the very basics of Svelte to give an idea how this website is made
+	and why I made it in Svelte.
+</p>
