@@ -16,6 +16,9 @@
 			<li class="post">
 				<a href={"/blog/" + post.slug} class="title">{post.title}</a>
 				<p class="date">{formatDate(post.date)}</p>
+				<a href={"/blog/" + post.slug}
+					><img src={post.coverimg} alt="Landscape" class="coverimg" /></a
+				>
 				<p class="description">{post.description}</p>
 			</li>
 		{/each}
@@ -32,6 +35,16 @@
 		max-inline-size: var(--size-content-3);
 	}
 
+	.coverimg {
+		height: var(--size-content-1);
+		width: var(--size-content-3);
+		object-fit: cover;
+		transition: ease;
+	}
+	.coverimg:hover {
+		transform: scale(1.01);
+	}
+
 	.post:not(:last-child) {
 		border-bottom: 1px solid var(--border);
 		padding-bottom: var(--size-7);
@@ -40,7 +53,6 @@
 	.title {
 		color: var(--brand);
 		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
 	}
 
 	.date {

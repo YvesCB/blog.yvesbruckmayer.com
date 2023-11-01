@@ -15,7 +15,7 @@
 	<!-- Title -->
 	<hgroup>
 		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<p>Published {formatDate(data.meta.date)}</p>
 	</hgroup>
 
 	<!-- Tags -->
@@ -37,10 +37,6 @@
 		margin-inline: auto;
 	}
 
-	h1 {
-		text-transform: capitalize;
-	}
-
 	h1 + p {
 		margin-top: var(--size-2);
 		color: var(--text-2);
@@ -49,7 +45,7 @@
 	.tags {
 		display: flex;
 		gap: var(--size-3);
-		margin-top: var(--size-7);
+		margin-block: var(--size-6);
 	}
 
 	.tags > * {
