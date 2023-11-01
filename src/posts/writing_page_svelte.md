@@ -247,3 +247,6 @@ We simply import the component and then we can use it like any other HTML tag.
 
 ## And so much more
 There's a million more things that Svelte can do. I didn't even go into any of the server side stuff that you can do with it. But even with just the few things introduced in this article, you could mostly copy everything I've done on this website. I hope that with this little explanation, it'll also be easy to follow along what I'm doing on the GitHub. You can find the link to it at the bottom of every page.
+
+## Addendum: Things have changed
+I'm coming back to this article a few days later, just to note that lots of things have changed (and will keep changing.) The structure and inner workings of this website are already completely different at this point than they were only a few days ago when I wrote this post. I found [a tutorial](https://joyofcode.xyz/sveltekit-markdown-blog) for using markdown to write blog posts and automatically make pages out of them. I used the information in the tutorial to make the website a lot better already. Proper code highlighting, writing articles in markdown and having a more robust foundation in general to go forward.
