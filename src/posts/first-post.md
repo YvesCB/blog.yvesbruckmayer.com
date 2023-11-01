@@ -8,6 +8,8 @@ categories:
 published: true
 ---
 
+## Table of contents
+
 ## Markdown
 
 Hey friends! 👋
@@ -17,3 +19,7 @@ function greet(name: string) {
 	console.log(`Hey ${name}! 👋`)
 }
 ```
+
+## Some more stuff
+
+This is where more stuff would be.

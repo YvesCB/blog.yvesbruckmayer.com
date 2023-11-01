@@ -9,9 +9,9 @@
 	</a>
 
 	<ul class="links">
-		<li><a href="/about">About</a></li>
-		<li><a href="/about">Blog</a></li>
-		<li><a href="/about">Friends</a></li>
+		<li><a href="/about">ABOUT</a></li>
+		<li><a href="/blog">BLOG</a></li>
+		<li><a href="/friends">FRIENDS</a></li>
 	</ul>
 
 	<Toggle />
@@ -34,6 +34,9 @@
 		color: inherit;
 		font-size: var(--font-size-4);
 		text-decoration: none;
+	}
+	a:hover {
+		color: var(--text-2);
 	}
 
 	@media (min-width: 768px) {

@@ -9,7 +9,8 @@
 </p>
 
 <p>
-	I'm gonna use this as a sort of <b>blog</b> for myself and I'm also gonna be
-	linking to some friends in the <a href="/friends">friends</a> section of this page.
-	It's other people that have recently (as of October 2023) been making some websites.
+	I'm gonna use this as a sort of <a href="/blog">blog</a> for myself and I'm
+	also gonna be linking to some friends in the <a href="/friends">friends</a> section
+	of this page. It's other people that have recently (as of October 2023) been making
+	some websites.
 </p>
