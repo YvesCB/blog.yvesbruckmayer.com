@@ -1,32 +1,65 @@
-<script>
-	import BlogTitle from "../../components/BlogTitle.svelte";
+<script lang="ts">
+	import { formatDate } from "$lib/utils";
+	import * as config from "$lib/config";
+
+	export let data;
 </script>
 
-<h1>This is where you'll find me posting random things</h1>
-<p>
-	I'm using this page as a little blog where I'm just gonna write about stuff.
-	Whatever stuff I wanna write about in the moment. Could be about programming
-	or about me taking a walk. Doesn't matter.
-</p>
+<svelte:head>
+	<title>{config.title}</title>
+</svelte:head>
 
-<BlogTitle
-	title="I went on a walk"
-	imgsrc="/blogimg/231023_img/coverimg.jpg"
-	bloglink="/blog/231023"
-	timestamp="23. Oct 2023"
-/>
-<p>
-	I went on a 10km walk/hike. Took some pictures and enjoyed the day. You can
-	read more by clicking the title or image.
-</p>
+<!-- Posts -->
+<section>
+	<ul class="posts">
+		{#each data.posts as post}
+			<li class="post">
+				<a href={"/blog/" + post.slug} class="title">{post.title}</a>
+				<p class="date">{formatDate(post.date)}</p>
+				<a href={"/blog/" + post.slug}
+					><img src={post.coverimg} alt="Landscape" class="coverimg" /></a
+				>
+				<p class="description">{post.description}</p>
+			</li>
+		{/each}
+	</ul>
+</section>
 
-<BlogTitle
-	title="Making a website with SvelteKit"
-	imgsrc="/blogimg/231030_img/cover.png"
-	bloglink="/blog/231030"
-	timestamp="30. Oct 2023"
-/>
-<p>
-	I explain the very basics of Svelte to give an idea how this website is made
-	and why I made it in Svelte.
-</p>
+<style>
+	.posts {
+		display: grid;
+		gap: 2rem;
+	}
+
+	.post {
+		max-inline-size: var(--size-content-3);
+	}
+
+	.coverimg {
+		height: var(--size-content-1);
+		width: var(--size-content-3);
+		object-fit: cover;
+		transition: ease;
+	}
+	.coverimg:hover {
+		transform: scale(1.01);
+	}
+
+	.post:not(:last-child) {
+		border-bottom: 1px solid var(--border);
+		padding-bottom: var(--size-7);
+	}
+
+	.title {
+		color: var(--brand);
+		font-size: var(--font-size-fluid-3);
+	}
+
+	.date {
+		color: var(--text-2);
+	}
+
+	.description {
+		margin-top: var(--size-3);
+	}
+</style>
