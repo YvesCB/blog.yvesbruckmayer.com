@@ -117,6 +117,11 @@ html {
   background-attachment: fixed;
 }
 
+main {
+  max-inline-size: 80ch;
+  margin-inline: auto;
+}
+
 img {
   border-radius: var(--radius-2);
   max-inline-size: 100%;
@@ -170,6 +175,10 @@ p {
   color: var(--text-1);
 }
 
+.prose {
+  max-inline-size: 100%;
+}
+
 .prose :is(h2, h3, h4, h5, h6) {
   margin-top: var(--size-8);
   margin-bottom: var(--size-3);
@@ -187,7 +196,6 @@ p {
   list-style: disc;
   margin-left: var(--size-3);
   padding-left: var(--size-5);
-
 }
 
 .prose :is(ul, ol) li {
@@ -201,9 +209,9 @@ p {
 }
 
 .prose pre {
-  max-inline-size: 100%;
   margin-block: var(--size-3);
   padding: 1rem;
   border-radius: 8px;
   tab-size: 2;
+  overflow: auto;
 }

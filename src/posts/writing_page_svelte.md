@@ -179,7 +179,7 @@ This is the completely code for my `BlogTitle.svelte` component:
 </script>
 
 <div class="blog-post">
-	## <a href={bloglink}>{title}</a>
+	<a href={bloglink}>{title}</a>
 	<p class="timestamp">{timestamp}</p>
 </div>
 <a href={bloglink}>

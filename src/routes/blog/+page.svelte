@@ -36,8 +36,8 @@
 	}
 
 	.coverimg {
-		height: var(--size-content-1);
-		width: var(--size-content-3);
+		height: var(--size-11);
+		width: 100%;
 		object-fit: cover;
 		transition: ease;
 	}
@@ -61,5 +61,11 @@
 
 	.description {
 		margin-top: var(--size-3);
+	}
+
+	@media (min-width: 768px) {
+		.coverimg {
+			height: var(--size-content-1);
+		}
 	}
 </style>
