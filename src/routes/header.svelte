@@ -24,6 +24,7 @@
 
 	.title {
 		font-size: var(--font-size-5);
+		color: var(--brand);
 	}
 
 	.links {
@@ -49,6 +50,7 @@
 			display: flex;
 			gap: var(--size-7);
 			margin-block: 0;
+			align-items: end;
 		}
 	}
 </style>

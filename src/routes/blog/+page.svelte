@@ -53,6 +53,7 @@
 	.title {
 		color: var(--brand);
 		font-size: var(--font-size-fluid-3);
+		font-weight: bold;
 	}
 
 	.date {

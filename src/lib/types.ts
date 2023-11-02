@@ -1,4 +1,4 @@
-export type Categories = 'dev' | 'nvim' | | 'svelte' | 'irl' | 'hiking'
+export type Categories = 'dev' | 'nvim' | 'svelte' | 'irl' | 'hiking'
 
 export type Post = {
 	title: string
@@ -8,4 +8,10 @@ export type Post = {
 	categories: Categories[]
 	coverimg: string
 	published: boolean
+}
+
+export type Friend = {
+	name: string
+	url: string
+	imgsrc: string
 }

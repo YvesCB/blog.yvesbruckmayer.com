@@ -47,7 +47,9 @@ I truly think that one of the nicest parts about Svelte is that, when working wi
 
 When you create your skeleton Svelte app with SvelteKit, you get this index page:
 
-```html filename="src/routes/+page.svelte"
+```html
+src/routes/+page.svelte
+
 <h1>Welcome to SvelteKit</h1>
 <p>
 	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
@@ -110,6 +112,8 @@ You can add a `+layout.svelte` file at any point in your `routes/` folder (or it
 Such a `+layout.svelte` file might look like this:
 
 ```html
+src/routes/+layout.svelte
+
 <svelte:head>
 	<title>Playground</title>
 	<meta name="robots" content="noindex nofollow" />
@@ -170,7 +174,9 @@ Enter Components! Imagine you could just define that whole thing once and then s
 
 This is the completely code for my `BlogTitle.svelte` component:
 
-```html src/components/BlogTitle.svelte
+```html 
+src/components/BlogTitle.svelte
+
 <script>
 	export let title;
 	export let imgsrc;
