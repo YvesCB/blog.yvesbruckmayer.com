@@ -192,6 +192,7 @@ p {
   display: inline-block;
   max-inline-size: 100%;
   white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .prose p:not(:is(h2, h3, h4, h5, h6) + p) {
