@@ -26,9 +26,18 @@
 </section>
 
 <style>
+	ul {
+		list-style: none;
+	}
+
+	a {
+		margin: 0;
+		padding: 0;
+	}
+
 	.posts {
 		display: grid;
-		gap: 2rem;
+		gap: 1.5rem;
 	}
 
 	.post {

@@ -40,6 +40,15 @@
 		color: var(--text-2);
 	}
 
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		padding-inline-start: 0;
+	}
+
 	@media (min-width: 768px) {
 		nav {
 			display: flex;
