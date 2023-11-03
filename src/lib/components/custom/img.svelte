@@ -48,7 +48,7 @@
 	}
 
 	.image-enlarge-target.active img {
-		max-height: 100%;
-		max-width: 100%;
+		max-height: 90%;
+		max-width: 90%;
 	}
 </style>
