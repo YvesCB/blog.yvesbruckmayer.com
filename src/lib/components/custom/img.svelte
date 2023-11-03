@@ -5,23 +5,27 @@
 	let enlarge = "";
 </script>
 
-<div class="image-enlarge">
-	<img {src} {alt} loading="lazy" on:click={() => (enlarge = "active")} />
+<div class="image-enlarge" on:click={() => (enlarge = "active")}>
+	<img {src} {alt} loading="lazy" />
 </div>
 <p>{enlarge}</p>
-<div class="image-enlarge-target {enlarge}">
-	<img {src} {alt} loading="lazy" on:click={() => (enlarge = "")} />
+<div class="image-enlarge-target {enlarge}" on:click={() => (enlarge = "")}>
+	<img {src} {alt} loading="lazy" />
 </div>
 
 <style>
+	div {
+		cursor: pointer;
+	}
+
 	img {
 		margin-top: var(--size-4);
 		max-inline-size: 100%;
-		cursor: pointer;
 	}
 
 	.image-enlarge-target {
 		position: fixed;
+		display: flex;
 		top: -100%;
 		width: 100%;
 		background: rgba(0, 0, 0, 0.7);
@@ -35,6 +39,8 @@
 	}
 
 	.image-enlarge-target.active {
+		justify-content: center;
+		align-items: center;
 		opacity: 1;
 		top: 0;
 		bottom: 0;
