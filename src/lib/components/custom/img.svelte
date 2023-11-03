@@ -8,7 +8,6 @@
 <div class="image-enlarge" on:click={() => (enlarge = "active")}>
 	<img {src} {alt} loading="lazy" />
 </div>
-<p>{enlarge}</p>
 <div class="image-enlarge-target {enlarge}" on:click={() => (enlarge = "")}>
 	<img {src} {alt} loading="lazy" />
 </div>
