@@ -1,14 +1,17 @@
 <script lang="ts">
 	export let src: string;
 	export let alt: string;
+
+	let enlarge = "";
 </script>
 
-<a class="image-enlarge" id={src} href={"#" + src + "target"}>
-	<img {src} {alt} loading="lazy" />
-</a>
-<a class="image-enlarge-target" id={src + "target"} href={"#" + src}>
-	<img {src} {alt} loading="lazy" />
-</a>
+<div class="image-enlarge">
+	<img {src} {alt} loading="lazy" on:click={() => (enlarge = "active")} />
+</div>
+<p>{enlarge}</p>
+<div class="image-enlarge-target {enlarge}">
+	<img {src} {alt} loading="lazy" on:click={() => (enlarge = "")} />
+</div>
 
 <style>
 	img {
@@ -17,12 +20,7 @@
 		cursor: pointer;
 	}
 
-	a {
-		padding: 0;
-		margin: 0;
-	}
-
-	a.image-enlarge-target {
+	.image-enlarge-target {
 		position: fixed;
 		top: -100%;
 		width: 100%;
@@ -36,7 +34,7 @@
 		overflow: hidden;
 	}
 
-	.image-enlarge-target:target {
+	.image-enlarge-target.active {
 		opacity: 1;
 		top: 0;
 		bottom: 0;
@@ -44,7 +42,7 @@
 		overflow: scroll;
 	}
 
-	.image-enlarge-target:target img {
+	.image-enlarge-target.active img {
 		max-height: 100%;
 		max-width: 100%;
 	}
