@@ -10,9 +10,12 @@ import rehypeSlug from 'rehype-slug'
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
+	layout: {
+		_: "./src/mdsvex.svelte",
+	},
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await shiki.getHighlighter({ theme: 'poimandres' })
+			const highlighter = await shiki.getHighlighter({ themes: ['poimandres', 'solarized-light'] })
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }))
 			return `{@html \`${html}\` }`
 		}

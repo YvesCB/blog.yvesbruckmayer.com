@@ -26,9 +26,20 @@
 </section>
 
 <style>
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		margin: 0;
+		padding: 0;
+	}
+
 	.posts {
 		display: grid;
-		gap: 2rem;
+		gap: 1.5rem;
 	}
 
 	.post {
@@ -36,8 +47,8 @@
 	}
 
 	.coverimg {
-		height: var(--size-content-1);
-		width: var(--size-content-3);
+		height: var(--size-11);
+		width: 100%;
 		object-fit: cover;
 		transition: ease;
 	}
@@ -53,6 +64,7 @@
 	.title {
 		color: var(--brand);
 		font-size: var(--font-size-fluid-3);
+		font-weight: bold;
 	}
 
 	.date {
@@ -61,5 +73,11 @@
 
 	.description {
 		margin-top: var(--size-3);
+	}
+
+	@media (min-width: 768px) {
+		.coverimg {
+			height: var(--size-content-1);
+		}
 	}
 </style>

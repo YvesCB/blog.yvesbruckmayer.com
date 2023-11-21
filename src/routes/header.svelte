@@ -24,6 +24,7 @@
 
 	.title {
 		font-size: var(--font-size-5);
+		color: var(--brand);
 	}
 
 	.links {
@@ -39,6 +40,15 @@
 		color: var(--text-2);
 	}
 
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		padding-inline-start: 0;
+	}
+
 	@media (min-width: 768px) {
 		nav {
 			display: flex;
@@ -49,6 +59,7 @@
 			display: flex;
 			gap: var(--size-7);
 			margin-block: 0;
+			align-items: end;
 		}
 	}
 </style>

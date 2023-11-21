@@ -33,8 +33,7 @@
 
 <style>
 	article {
-		max-inline-size: 80ch;
-		margin-inline: auto;
+		max-inline-size: 87vw;
 	}
 
 	h1 + p {

@@ -9,3 +9,9 @@ export type Post = {
 	coverimg: string
 	published: boolean
 }
+
+export type Friend = {
+	name: string
+	url: string
+	imgsrc: string
+}

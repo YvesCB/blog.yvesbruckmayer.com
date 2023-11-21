@@ -1,7 +1,9 @@
 @import "@fontsource/jetbrains-mono";
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Roboto:wght@300&display=swap");
 
 html {
+  --font-sans: "Kosugi Maru", sans-serif;
   --font-sans: "Playpen Sans", cursive;
   --font-mono: "JetBrains Mono", monospace;
 
@@ -20,7 +22,7 @@ html {
   --border-dark: var(--stone-8);
 
   /* light */
-  --brand-light: var(--indigo-3);
+  --brand-light: var(--blue-5);
 
   --text-1-light: var(--gray-8);
   --text-2-light: var(--gray-6);
@@ -30,8 +32,13 @@ html {
   --surface-3-light: var(--gray-2);
   --surface-2-light: var(--gray-3);
 
-  --background-light: var(--brown-1);
+  --background-light: var(--brown-0);
   --border-light: var(--gray-4);
+}
+
+/* CJKComp unicode range: U+3300 	U+33FF */
+.jp {
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 :root {
@@ -117,15 +124,14 @@ html {
   background-attachment: fixed;
 }
 
+main {
+  max-inline-size: 45rem;
+  margin-inline: auto;
+}
+
 img {
   border-radius: var(--radius-2);
   max-inline-size: 100%;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
 }
 
 li {
@@ -148,8 +154,24 @@ h4 {
   margin-block: var(--size-3);
 }
 
+h5 {
+  margin-block: var(--size-3);
+}
+
+h6 {
+  margin-block: var(--size-3);
+}
+
 p {
   margin-block: var(--size-3);
+}
+
+:is(p, h1, h2, h3, h4, h5, h6) :is(b, strong, it) {
+  color: var(--brand);
+}
+
+code {
+  font-size: var(--font-size-1);
 }
 
 .surface-1 {
@@ -170,24 +192,26 @@ p {
   color: var(--text-1);
 }
 
+.prose {
+  max-inline-size: 100%;
+}
+
 .prose :is(h2, h3, h4, h5, h6) {
   margin-top: var(--size-8);
   margin-bottom: var(--size-3);
 }
 
-.prose :is(p, h1, h2, h3, h4, h5, h6, ul, ol, li) {
+.prose p > code {
+  display: inline-block;
   max-inline-size: 100%;
-}
-
-.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-  margin-top: var(--size-7);
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .prose :is(ul, ol) {
   list-style: disc;
   margin-left: var(--size-3);
   padding-left: var(--size-5);
-
 }
 
 .prose :is(ul, ol) li {
@@ -195,15 +219,10 @@ p {
   padding-inline-start: var(--size-2);
 }
 
-.prose img {
-  margin-top: var(--size-4);
-  max-inline-size: 100%;
-}
-
 .prose pre {
-  max-inline-size: 100%;
   margin-block: var(--size-3);
   padding: 1rem;
   border-radius: 8px;
   tab-size: 2;
+  overflow: auto;
 }

@@ -37,7 +37,7 @@ This one here shows the path taking a turn.
 
 Lastly one that is like the first, but here just painted on a tree in the forest.
 
-![img](/blog/231023_img/arrowsign.jpg)
+![img](/blog/231023_img/treemarking.jpg)
 
 ## Departure
 Sunday the 22nd of October, 9AM. I get up! Having picked out my route and prepared food for sandwiches, I feel ready to go. After preparing the sandwiches and finishing my usual morning coffee, I get fully dressed, pack my backpack and go outside.

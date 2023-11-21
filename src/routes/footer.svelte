@@ -4,7 +4,7 @@
 
 <footer>
 	<p>
-		{config.title} GitHub page with source code
+		{config.title} &copy {new Date().getFullYear()} GitHub page with source code
 		<a href="https://github.com/YvesCB/playground.yvesbruckmayer.com/">here.</a>
 	</p>
 </footer>
