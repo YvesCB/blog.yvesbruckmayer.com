@@ -2,10 +2,10 @@
 <p>
 	This is my Homepage/Playground. I'm just gonna put a bunch of stuff here. This
 	site was made with <a href="https://kit.svelte.dev/">SvelteKit</a>. I'm by no
-	means a Svelte Guru but it's a framework I quite enjoy because of how simple
-	it can be to use if you chose not to do anything too crazy with it. It's
-	basically just <b>HTML</b> and <b>CSS</b> with some extra features at its very
-	simplest.
+	means a Svelte Guru but it's a framework I quite it, enjoy because of how
+	simple it can be to use if you choose not to do anything too crazy with it.
+	It's basically just <b>HTML</b> and <b>CSS</b> with some extra features at its
+	very simplest.
 </p>
 
 <p>

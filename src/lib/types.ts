@@ -1,4 +1,4 @@
-export type Categories = 'dev' | 'nvim' | | 'svelte' | 'irl' | 'hiking'
+export type Categories = 'dev' | 'nvim' | 'svelte' | 'irl' | 'hiking'
 
 export type Post = {
 	title: string
