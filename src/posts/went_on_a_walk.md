@@ -5,7 +5,7 @@ date: '2023-10-23'
 categories:
   - irl
   - hiking
-coverimg: 'blog/231023_img/coverimg.jpg'
+coverimg: '/blog/231023_img/coverimg.jpg'
 published: true
 ---
 

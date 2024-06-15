@@ -6,7 +6,7 @@ categories:
   - dev
   - nvim
   - svelte
-coverimg: 'blog/231030_img/cover.png'
+coverimg: '/blog/231030_img/cover.png'
 published: true
 ---
 
