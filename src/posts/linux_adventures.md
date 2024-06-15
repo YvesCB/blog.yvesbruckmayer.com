@@ -1,6 +1,6 @@
 ---
 title: Linux Adventures
-description: So I finally switched my main workstation PC to linux after being fed up with Windows.
+description: So I finally switched my main workstation PC to Linux after being fed up with Windows.
 date: '2024-06-15'
 categories:
   - dev
